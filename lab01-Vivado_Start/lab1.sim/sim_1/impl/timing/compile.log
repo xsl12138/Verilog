@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_vivado/projects/lab01-Vivado_Start/lab1.sim/sim_1/impl/timing/lab1_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab1
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_vivado/projects/lab01-Vivado_Start/lab1.srcs/sim_1/imports/lab1/lab1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_vivado/projects/lab01-Vivado_Start/lab1.sim/sim_1/impl/timing/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [D:/xilinx_vivado/projects/lab01-Vivado_Start/lab1.sim/sim_1/impl/timing/glbl.v:6]

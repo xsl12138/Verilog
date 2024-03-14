@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1683367213">
+  <File Type="OPT-DCP" Name="auto_cal_top_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DCP" Name="auto_cal_top_pwropt.dcp"/>
+  <File Type="ROUTE-DCP" Name="auto_cal_top_routed.dcp"/>
+  <File Type="PA-TCL" Name="auto_cal_top.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="auto_cal_top_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="auto_cal_top_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="auto_cal_top.hwdef"/>
+  <File Type="PLACE-DCP" Name="auto_cal_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="auto_cal_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="auto_cal_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="auto_cal_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="auto_cal_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="auto_cal_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="auto_cal_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="auto_cal_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="auto_cal_top_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="auto_cal_top_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="auto_cal_top.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="auto_cal_top_drc_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="auto_cal_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="auto_cal_top_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="auto_cal_top_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="auto_cal_top_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="auto_cal_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="auto_cal_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="auto_cal_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="auto_cal_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="auto_cal_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="auto_cal_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="auto_cal_top_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="auto_cal_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="auto_cal_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="auto_cal_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="auto_cal_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="auto_cal_top.bit"/>
+  <File Type="BG-BIN" Name="auto_cal_top.bin"/>
+  <File Type="BITSTR-MSK" Name="auto_cal_top.msk"/>
+  <File Type="BITSTR-RBT" Name="auto_cal_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="auto_cal_top.nky"/>
+  <File Type="BITSTR-BMM" Name="auto_cal_top_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="auto_cal_top.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="auto_cal_top.sysdef"/>
+  <File Type="BG-BGN" Name="auto_cal_top.bgn"/>
+  <File Type="BG-DRC" Name="auto_cal_top.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/selector.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../data_path/data_path.srcs/sources_1/new/selector.v"/>
+        <Attr Name="ImportTime" Val="1681212581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/register.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../data_path/data_path.srcs/sources_1/new/register.v"/>
+        <Attr Name="ImportTime" Val="1681212613"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/memory.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../data_path/data_path.srcs/sources_1/new/memory.v"/>
+        <Attr Name="ImportTime" Val="1681213136"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/full_adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../data_path/data_path.srcs/sources_1/new/full_adder.v"/>
+        <Attr Name="ImportTime" Val="1681213204"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/comparator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../data_path/data_path.srcs/sources_1/new/comparator.v"/>
+        <Attr Name="ImportTime" Val="1681213204"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab04-Data_path_and_FSM/FSM/FSM.srcs/sources_1/new/FSM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../FSM/FSM.srcs/sources_1/new/FSM.v"/>
+        <Attr Name="ImportTime" Val="1681218788"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/datapath_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../data_path/data_path.srcs/sources_1/new/datapath_top.v"/>
+        <Attr Name="ImportTime" Val="1681212282"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/auto_calculate.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/divider.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pattern.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/auto_cal_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="auto_cal_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/lab04-Data_path_and_FSM/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1491987576"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Mar 28 19:06:32 2023
+# Process ID: 26832
+# Log file: D:/xilinx_vivado/projects/lab03-Simple_sequential_circuit/divide_and_count/divide_and_count.runs/impl_1/divider.vdi
+# Journal file: D:/xilinx_vivado/projects/lab03-Simple_sequential_circuit/divide_and_count/divide_and_count.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source divider.tcl -notrace

@@ -1,0 +1,12 @@
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/xilinx_vivado/projects/lab03-Simple_sequential_circuit/divide_and_count/divide_and_count.hw/webtalk/labtool_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2577594772 -regid "" -xml D:/xilinx_vivado/projects/lab03-Simple_sequential_circuit/divide_and_count/divide_and_count.hw/we..."
+    (file "D:/xilinx_vivado/projects/lab03-Simple_sequential_circuit/divide_and_count/divide_and_count.hw/webtalk/labtool_webtalk.tcl" line 28)
+INFO: [Common 17-206] Exiting Webtalk at Tue Mar 28 19:05:30 2023...

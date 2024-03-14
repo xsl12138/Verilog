@@ -1,0 +1,12 @@
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/xilinx_vivado/projects/lab2-Simple_combination_circuit/lab2_1/lab2_1.hw/webtalk/labtool_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1137044053 -regid "" -xml D:/xilinx_vivado/projects/lab2-Simple_combination_circuit/lab2_1/lab2_1.hw/webtalk/usage_statisti..."
+    (file "D:/xilinx_vivado/projects/lab2-Simple_combination_circuit/lab2_1/lab2_1.hw/webtalk/labtool_webtalk.tcl" line 28)
+INFO: [Common 17-206] Exiting Webtalk at Tue Mar 21 19:02:50 2023...

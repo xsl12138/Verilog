@@ -1,0 +1,358 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Apr 11 21:21:46 2023
+# Process ID: 32668
+# Log file: D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.runs/synth_1/datapath.vds
+# Journal file: D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source datapath.tcl -notrace
+Command: synth_design -top datapath -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 263.848 ; gain = 91.449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'datapath' [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/datapath_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'register' [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/register.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register' (1#1) [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/full_adder.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (2#1) [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/full_adder.v:23]
+WARNING: [Synth 8-350] instance 'A1' of module 'full_adder' requires 5 connections, but only 4 given [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/datapath_top.v:38]
+WARNING: [Synth 8-350] instance 'A2' of module 'full_adder' requires 5 connections, but only 4 given [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/datapath_top.v:39]
+INFO: [Synth 8-638] synthesizing module 'selector' [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/selector.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'selector' (3#1) [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/selector.v:23]
+INFO: [Synth 8-638] synthesizing module 'comparator' [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/comparator.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'comparator' (4#1) [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/comparator.v:23]
+WARNING: [Synth 8-350] instance 'C1' of module 'comparator' requires 5 connections, but only 3 given [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/datapath_top.v:45]
+INFO: [Synth 8-638] synthesizing module 'memory' [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/memory.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'ram_init.txt' is read successfully [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/memory.v:33]
+INFO: [Synth 8-256] done synthesizing module 'memory' (5#1) [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/memory.v:23]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (6#1) [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/datapath_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 299.082 ; gain = 126.684
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 299.082 ; gain = 126.684
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/constrs_1/imports/lab04-Data_path_and_FSM/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/data_path/data_path.srcs/constrs_1/imports/lab04-Data_path_and_FSM/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 599.875 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "ram" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module full_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+Module selector 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 599.875 ; gain = 427.477
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\M1/q_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[31] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[30] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[29] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[28] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[27] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[26] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[25] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[24] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[23] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[22] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[21] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[20] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[19] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[18] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[17] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[16] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[15] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[14] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[13] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[12] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[11] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[10] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[9] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[8] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[7] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[6] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[5] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[4] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[3] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[2] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\M1/q_reg[0] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[31] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[30] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[29] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[28] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[27] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[26] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[25] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[24] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[23] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[22] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[21] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[20] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[19] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[18] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[17] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[16] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[15] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[14] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[13] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[12] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[11] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[10] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[9] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[8] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[7] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[6] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[5] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[4] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[3] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[2] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[1] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R2/q_reg[0] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\R1/q_reg[0] ) is unused and will be removed from module datapath.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 599.875 ; gain = 427.477
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    30|
+|4     |LUT2   |    32|
+|5     |LUT3   |     1|
+|6     |FDRE   |    32|
+|7     |IBUF   |     6|
+|8     |OBUF   |    33|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |   143|
+|2     |  A1     |full_adder |     9|
+|3     |  S1     |selector   |    31|
+|4     |  M1     |memory     |     2|
+|5     |  R1     |register   |    61|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 599.875 ; gain = 427.477
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 64 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 599.875 ; gain = 87.223
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 599.875 ; gain = 427.477
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 67 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 599.875 ; gain = 390.281
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 599.875 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 11 21:22:00 2023...

@@ -1,0 +1,23 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx_vivado/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 6a666d5b4669421f862cd9ff6d18e89a --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot auto_add_tb_behav xil_defaultlib.auto_add_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port c_in [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/auto_calculate/auto_calculate.srcs/sources_1/imports/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/datapath_top.v:38]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port c_in [D:/xilinx_vivado/projects/lab04-Data_path_and_FSM/auto_calculate/auto_calculate.srcs/sources_1/imports/lab04-Data_path_and_FSM/data_path/data_path.srcs/sources_1/new/datapath_top.v:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.register(WIDTH=32)
+Compiling module xil_defaultlib.full_adder(WIDTH=32)
+Compiling module xil_defaultlib.selector(WIDTH=32)
+Compiling module xil_defaultlib.comparator(WIDTH=32)
+Compiling module xil_defaultlib.memory(DATA_WIDTH=32)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.auto_calculate(DATA_WIDTH=32)
+Compiling module xil_defaultlib.auto_add_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot auto_add_tb_behav
